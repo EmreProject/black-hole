@@ -56,9 +56,9 @@ const particleParameters = {
 
 //Texture Loader
 const textureLoader=new THREE.TextureLoader();
-const particleTexture=await textureLoader.loadAsync("/assets/muzzle_01.png")
+const particleTexture=await textureLoader.loadAsync("./assets/muzzle_01.png")
 
-const matCapTexture=textureLoader.load("/assets/matcap4.png");
+const matCapTexture=textureLoader.load("./assets/matcap4.png");
 
 
 
@@ -83,7 +83,7 @@ let fontParameters={
   
 
    };
-fontLoader.load("/assets/Goldman_Regular.json",(font)=>{
+fontLoader.load("./assets/Goldman_Regular.json",(font)=>{
     fontParameters.font=font;
     console.log(font)
    textGeometry=new TextGeometry("EMRE PROJECT",fontParameters);

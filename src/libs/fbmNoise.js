@@ -23,8 +23,8 @@ async function loadVolumeF32(jsonUrl, binUrl) {
 
 
 const { texture: noiseTex3D, meta } = await loadVolumeF32(
-  '/assets/noise_235x235x235.json',
-  '/assets/noise_235x235x235.f32'
+  './assets/noise_235x235x235.json',
+  './assets/noise_235x235x235.f32'
 );
 
 
