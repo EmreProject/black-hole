@@ -17,7 +17,6 @@ import renderVertex from "../shaders/renderVertex.glsl"
 import renderFragment from "../shaders/renderFragment.glsl"
 
 
-import { noiseTex3D } from './fbmNoise.js'
 
 
 const gui = new dat.GUI()
@@ -252,7 +251,7 @@ const updateMaterial = new THREE.RawShaderMaterial({
         positionTexture:{value: null},
         velocityTexture:{value: null},
         isHorizontalParticle:{value: null},
-        noise3D:{value: noiseTex3D},
+        noise3D:{value: null},
         uFlowFieldSize:{value: 100},
         uFlowFieldMaxForce:{value: 0},
 
@@ -270,7 +269,7 @@ const updateMaterial2 = new THREE.RawShaderMaterial({
         positionTexture:{value: null},
         velocityTexture:{value: null},
         isHorizontalParticle:{value: null},
-        noise3D:{value: noiseTex3D},
+        noise3D:{value: null},
         uFlowFieldSize:{value: 100},
         uFlowFieldMaxForce:{value: 0},
 
